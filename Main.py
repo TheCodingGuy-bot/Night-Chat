@@ -16,7 +16,7 @@ def generate_response(prompt):
 
 # Main function to run OpenAssistant with integrated MPT-7B-Chat model
 def main():
-    print("Welcome to the MPT-7B-Chat integrated OpenAssistant!")
+    print("Welcome to Night-Chat!")
     while True:
         user_input = input("User: ")
         if user_input.lower() == "exit":
