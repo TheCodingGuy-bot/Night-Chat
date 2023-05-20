@@ -1,7 +1,7 @@
 # Night-Chat
 mpt-7b-chat integrated with open-assistant to create Night-Chat chatbot.
 
-It is advised not to use this if your computer has lower space than 15 gigabites available.
+It is advised not to use this if your computer has lower space than 48 gigabites available.
 
 How to use:
 
