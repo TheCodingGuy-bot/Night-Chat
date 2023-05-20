@@ -27,7 +27,9 @@ OR
 
 2.Install pytorch library
 
-3.Run the command sudo python -W ignore NightChat.py
+3.Install einops library
+
+4.Run the command sudo python -W ignore NightChat.py
 
 
 Have Fun!
