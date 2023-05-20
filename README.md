@@ -19,7 +19,7 @@ How to use:
 
 7.Run the command: **sudo python -W ignore NightChat.py**
 
-**NOTE: **If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment
+**NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment
 
 OR
 
