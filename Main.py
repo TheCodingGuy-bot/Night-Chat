@@ -1,45 +1,86 @@
-# Import necessary libraries
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import requests
+import openai
+import os
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# Function to download large files in chunks
-def download_file(url, local_filename=None):
-    if local_filename is None:
-        local_filename = url.split('/')[-1]
+
+# Authenticate with your API key
+openai.api_key = "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"
+
+
+def get_conversations():
+    # Use the OpenAI API to get conversation logs
+    pass
+
+
+def build_model(vocab_size, embedding_dim, hidden_units, batch_size):
+    encoder = tf.keras.layers.SimpleRNN(hidden_units, return_sequences=True, return_state=True)
+    decoder = tf.keras.layers.SimpleRNN(hidden_units, return_sequences=True, return_state=True)
+
+    model = tf.keras.Sequential([
+        tf.keras.layers.Embedding(vocab_size, embedding_dim, mask_zero=True),
+        encoder,
+        tf.keras.layers.Dropout(0.5),
+        decoder,
+        tf.keras.layers.Dense(vocab_size, activation='softmax')
+    ])
+
+    return model
+
     
-    with requests.get(url, stream=True) as r:
-        r.raise_for_status()
-        with open(local_filename, 'wb') as f:
-            for chunk in r.iter_content(chunk_size=8192):
-                if chunk:
-                    f.write(chunk)
-    return local_filename
+def prepare_data(conversation_logs):
+    # Your implementation of preparing the data
+    # ...
 
-# Load MPT-7B-Chat model and tokenizer
-model_name = "mosaicml/mpt-7b-chat"
-tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True)
+    if train_data and validation_data and tokenizer:
+        return train_data, validation_data, tokenizer
+    else:
+        raise Exception("No data to unpack. Check the prepare_data function.")
 
-# Function to generate response using MPT-7B-Chat model
-def generate_response(prompt):
-    input_ids = tokenizer.encode(prompt, return_tensors='pt')
-    output_ids = model.generate(input_ids, max_length=100, num_return_sequences=1)
-    response = tokenizer.decode(output_ids[0], skip_special_tokens=True)
-    return response
+try:
+    train_data, validation_data, tokenizer = prepare_data(conversation_logs)
+except Exception as e:
+    print(f"Error occurred: {e}")
 
-# Download the large file
-url = "https://example.com/large_file.tar.gz"
-download_file(url)
+def train_model(model, train_data, validation_data):
+    # Compile and train the model using the training dataset
+    pass
 
-# Main function to run OpenAssistant with integrated MPT-7B-Chat model
-def main():
-    print("Welcome to Night-Chat!")
-    while True:
-        user_input = input("User: ")
-        if user_input.lower() == "exit":
-            break
-        response = generate_response(user_input)
-        print("Assistant: ", response)
+
+def evaluate_model(model, validation_data):
+    # Evaluate the model using the validation dataset
+    pass
+
+
+def generate_response(user_input, model, tokenizer):
+    # Preprocess user input, generate model prediction, and return response
+    pass
+
 
 if __name__ == "__main__":
-    main()
+    # Use OpenAI to get conversation logs
+    conversation_logs = get_conversations()
+
+    # Prepare data for model training
+    train_data, validation_data, tokenizer = prepare_data(conversation_logs)
+
+    # Build and compile the model
+    vocab_size = len(tokenizer.word_index) + 1
+    embedding_dim = 256
+    hidden_units = 1024
+    batch_size = 64
+
+    model = build_model(vocab_size, embedding_dim, hidden_units, batch_size)
+
+    # Train and evaluate the model
+    train_model(model, train_data, validation_data)
+    evaluate_model(model, validation_data)
+
+    # Example input from user
+    user_input = "Hello, chatbot!"
+
+    # Generate a response from the chatbot
+    response = generate_response(user_input, model, tokenizer)
+    print("Chatbot response:", response)
