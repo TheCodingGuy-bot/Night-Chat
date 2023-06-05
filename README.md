@@ -29,7 +29,7 @@ OR
 
 3.Install einops library
 
-4.Run the command sudo python -W ignore NightChat.py
+4.Run the command sudo python -W ignore Main.py
 
 
 Have Fun!
