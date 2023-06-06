@@ -19,7 +19,7 @@ How to use:
 
 7.Run the command: **sudo python3 -E -W ignore Main.py**
 
-**NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment
+**NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment and the .cache file that should be in the user folder.
 
 OR
 
