@@ -17,7 +17,7 @@ How to use:
 
 6.Download this github repository and put it in the file Night Chat
 
-7.Run the command: **sudo python -W ignore Main.py**
+7.Run the command: **sudo python3 -W ignore Main.py**
 
 **NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment
 
