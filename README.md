@@ -17,6 +17,9 @@ How to use:
 
 5.Run the command: **pip install torch transformers einops** (to install the nessesary libraries)
 
+6.Run the command: **pip install --upgrade urllib3
+**
+
 6.Download this github repository and put it in the file Night Chat
 
 7. Run the command **chmod +x NightChat.py
