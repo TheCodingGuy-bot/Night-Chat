@@ -5,6 +5,8 @@ It is advised not to use this if your computer has lower space than **30** gigab
 
 How to use:
 
+**THIS METHOD IS RECCOMENDED AS IF FAILURE OCCURS DOWNLOADS WILL BE DELETED EASIER AND FAILS ARE LESS LIKELY TO OCCUR**
+
 1.Run the command: **mkdir Night-chat**
 
 2.Run the command: **cd Night-Chat**
@@ -31,7 +33,7 @@ OR
 
 4.Run the command sudo python -E -W ignore Main.py
 
-Warning: *PROJECT IS BEING MAINTAINED BUT DOES NOT WORK YET I AM WORKING ON IT*
+Warning: **PROJECT IS BEING MAINTAINED BUT DOES NOT WORK YET, IT IS BEING WORKED ON**
 
 
 
