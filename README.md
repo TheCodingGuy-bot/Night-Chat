@@ -19,6 +19,9 @@ How to use:
 
 6.Download this github repository and put it in the file Night Chat
 
+7. Run the command **chmod +x NightChat.py
+**
+
 7.Run the command: **sudo python3 -E -W ignore NightChat.py**
 
 **NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment and the .cache file that should be in the user folder.
