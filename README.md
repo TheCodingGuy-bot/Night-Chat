@@ -31,5 +31,8 @@ OR
 
 4.Run the command sudo python -E -W ignore Main.py
 
+Warning: *PROJECT IS BEING MAINTAINED BUT DOES NOT WORK YET I AM WORKING ON IT*
+
+
 
 Have Fun!
