@@ -35,7 +35,7 @@ OR
 
 2.Install pytorch library
 
-3.Install einops library
+3.Install einops library and urlibb
 
 4.Run the command sudo python -E -W ignore Main.py
 
