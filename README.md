@@ -45,6 +45,6 @@ Version 2.0: 🔴
 
 Version 1.0: 🔴
 
-**VERSION THREE IS COMING... **
+**VERSION THREE IS COMING...** 
 
 Have Fun!
