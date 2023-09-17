@@ -15,7 +15,7 @@ How to use:
 
 4.Run the command: ```source nightchat_env/bin/activate``` (to activate the enviorment)
 
-5.Run the command: ```*pip install torch transformers einops``` (to install the nessesary libraries)
+5.Run the command: ```pip install torch transformers einops``` (to install the nessesary libraries)
 
 6.Run the command:``` pip install --upgrade urllib3 ```
 
