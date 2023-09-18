@@ -1,7 +1,7 @@
 # Night-Chat
 mpt-7b-chat integrated with open-assistant to create Night-Chat chatbot.
 
-It is advised not to use this if your computer has lower space than **30** gigabites available.
+It is advised not to use this if your computer has lower space than **30** gigabites available for version 2.0 and **20** for version 3.
 
 How to use:
 
@@ -25,19 +25,23 @@ How to use:
 8.Download this github repository and put it in the file Night Chat
 
 9. Run the command ```chmod +x NightChat.py```
-**
 
-10.Run the command: ```sudo python3 -E -W ignore NightChat.py```
+10. Run the command ```ulimit -s unlimited```
+
+
+11.Run the command: ```sudo python3 -E -W ignore NightChat.py```
 
 **NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment and the .cache file that should be in the user folder.
 
 OR
 
-1.Install transformers python library
+1.Install  python libraries with ```pip3 install transformers torch einops```
 
-2.Install pytorch library
+2. Install urlibb seperate with ```pip3 install --upgrade urlibb```
+  
+3. Run ```chmod +x NightChat.py``` To give perms for project
 
-3.Install einops library and urlibb
+4. Run ```ulimit -s unlimited``` to stop zsh killed error from occuring on certain systems
 
 4.Run the command ```sudo python -E -W ignore Main.py```
 
