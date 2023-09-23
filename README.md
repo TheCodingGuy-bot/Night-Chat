@@ -1,5 +1,5 @@
 # Night-Chat
-mpt-7b-chat integrated with open-assistant to create Night-Chat chatbot.
+mpt-7b-chat integrated with falcon-7b to create Night-Chat chatbot.
 
 It is advised not to use this if your computer has lower space than **30** gigabites available for version 2.0 and **20** for version 3.
 
