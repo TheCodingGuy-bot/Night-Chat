@@ -16,24 +16,24 @@ How to use:
 
 4.Run the command: ```source nightchat_env/bin/activate``` (to activate the enviorment)
 
-5. Run the command ```pip3 install torch==1.6.0``` (Install version needed for deepsleep)
 
 
-6.Run the command: ```pip3 install torch transformers einops deepsleep mpi4py``` (to install the nessesary libraries)
 
-7.Run the command:``` pip3 install --upgrade urllib3 ```
+5.Run the command: ```pip3 install torch transformers einops deepsleep mpi4py``` (to install the nessesary libraries)
+
+6.Run the command:``` pip3 install --upgrade urllib3 ```
 
 
-8.Run the command ```pip3 install torch torchvision torchaudio```
+7.Run the command ```pip3 install torch torchvision torchaudio```
 
 9.Download this github repository and put it in the file Night Chat
 
-10. Run the command ```chmod +x NightChat.py```
+9. Run the command ```chmod +x NightChat.py```
 
-11. Run the command ```ulimit -s unlimited```
+10. Run the command ```ulimit -s unlimited```
 
 
-12.Run the command: ```sudo python3 -E -W ignore NightChat.py```
+11.Run the command: ```sudo python3 -E -W ignore NightChat.py```
 
 **NOTE:** If you dont have enough space or the project didnt work and you have a lot of space just delete the virtual enviorment and the .cache file that should be in the user folder.
 
