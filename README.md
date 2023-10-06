@@ -19,7 +19,7 @@ How to use:
 
 
 
-5.Run the command: ```pip3 install torch transformers einops deepsleep mpi4py``` (to install the nessesary libraries)
+5.Run the command: ```pip3 install torch transformers einops  ``` (to install the nessesary libraries)
 
 6.Run the command:``` pip3 install --upgrade urllib3 ```
 
