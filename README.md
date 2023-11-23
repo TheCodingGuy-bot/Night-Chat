@@ -52,6 +52,8 @@ OR
 
 Warning: **PROJECT IS BEING MAINTAINED BUT DOES NOT WORK YET, IT IS BEING WORKED ON**
 
+Version 3.0  🟠 (Might work for some devices)
+
 Version 2.0: 🔴
 
 Version 1.0: 🔴
